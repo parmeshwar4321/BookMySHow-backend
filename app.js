@@ -23,6 +23,9 @@ app.use(morgan("dev"));
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
 
+app.get("/", (req, res) =>
+  res.send({ msg: "welcome to movie ticket Booking app" })
+);
 app.use("/users", userRouters);
 app.use("/movies", moviessRouters);
 app.use("/cinema", cinemaRouters);

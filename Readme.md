@@ -8,7 +8,7 @@
 - user can book ticket for movie
 
 
-how to get started
+### how to get started
 
 ```
 git clone  <Repo URL>
@@ -24,4 +24,24 @@ Run your project
 
 ```
 npm start
+```
+
+### for Heroku  deployements
+```
+$ heroku login
+```
+Clone the repository
+Use Git to clone fast-cove-19760's source code to your local machine.
+
+```
+$ heroku git:clone -a fast-cove-19760 
+$ cd fast-cove-19760
+```
+Deploy your changes
+Make some changes to the code you just cloned and deploy them to Heroku using Git.
+
+```
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master
 ```
